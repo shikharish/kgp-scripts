@@ -1,2 +1,2 @@
 # erp-scripts
-Collection of ERP Automation scripts
+Personal collection of ERP Automation scripts
