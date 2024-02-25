@@ -1,2 +1,2 @@
 # erp-scripts
-Personal collection of ERP Automation scripts
+Personal collection of ERP and KGP-related scripts
