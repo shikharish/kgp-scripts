@@ -1,7 +1,7 @@
 package main
 
-import "github.com/shikharish/erp-scripts/erp"
+import kgp_scripts "github.com/shikharish/erp-scripts"
 
 func main() {
-	erp.OpenERP()
+	kgp_scripts.OpenERP()
 }

@@ -1,4 +1,4 @@
-package erp
+package kgp_scripts
 
 import (
 	erp_login "github.com/metakgp/iitkgp-erp-login-go"

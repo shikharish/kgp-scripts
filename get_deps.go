@@ -1,4 +1,4 @@
-package deps
+package kgp_scripts
 
 import (
 	"encoding/json"
