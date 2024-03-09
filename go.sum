@@ -70,8 +70,8 @@ github.com/googleapis/gax-go/v2 v2.12.0 h1:A+gCJKdRfqXkr+BIRGtZLibNXf0m1f9E4HG56
 github.com/googleapis/gax-go/v2 v2.12.0/go.mod h1:y+aIqrI5eb1YGMVJfuV3185Ts/D7qKpsEkdD5+I6QGU=
 github.com/kennygrant/sanitize v1.2.4 h1:gN25/otpP5vAsO2djbMhF/LQX6R7+O1TB4yv8NzpJ3o=
 github.com/kennygrant/sanitize v1.2.4/go.mod h1:LGsjYYtgxbetdg5owWB2mpgUL6e2nfw2eObZ0u0qvak=
-github.com/metakgp/iitkgp-erp-login-go v1.0.1 h1:QWfNI/BucSlTTl+3y5j/Z4bERg5gShlAbUvgI3NqRN4=
-github.com/metakgp/iitkgp-erp-login-go v1.0.1/go.mod h1:Hv6VaTwC866ZeQeh69MXV2kbx+mjlT+YbfkPUnqSacM=
+github.com/metakgp/iitkgp-erp-login-go v1.0.2 h1:oTSmIH8p2wNEXJCF2+aMS5aJBmDt6HpHV31ppT25eN8=
+github.com/metakgp/iitkgp-erp-login-go v1.0.2/go.mod h1:Hv6VaTwC866ZeQeh69MXV2kbx+mjlT+YbfkPUnqSacM=
 github.com/pkg/browser v0.0.0-20240102092130-5ac0b6a4141c h1:+mdjkGKdHQG3305AYmdv1U2eRNDiU2ErMBj1gwrq8eQ=
 github.com/pkg/browser v0.0.0-20240102092130-5ac0b6a4141c/go.mod h1:7rwL4CYBLnjLxUqIJNnCWiEdr3bn6IUYi15bNlnbCCU=
 github.com/pmezard/go-difflib v1.0.0 h1:4DBwDE0NGyQoBHbLQYPwSUPoCMWR5BEzIk/f1lZbAQM=

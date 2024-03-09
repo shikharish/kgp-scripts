@@ -10,20 +10,20 @@ import (
 )
 
 func WriteDepsToJSON() {
-	var deps map[string]string = make(map[string]string)
+	deps := make(map[string]string)
 
 	c := colly.NewCollector(
-		colly.AllowedDomains("www.iitkgp.ac.in"),
+		colly.AllowedDomains(KGP_DOMAIN),
 		colly.MaxDepth(1),
 	)
 
-	c.OnHTML("a[href]", func(e *colly.HTMLElement) {
-		if strings.Contains(e.Attr("href"), "https://www.iitkgp.ac.in/department/") && len(e.Attr("href")) == 38 {
-			deps[e.Attr("href")[36:]] = e.Text[1:]
+	c.OnHTML("a[href]", func(h *colly.HTMLElement) {
+		if strings.Contains(h.Attr("href"), DEPARTMENT_URL) && len(h.Attr("href")) == 38 {
+			deps[h.Attr("href")[36:]] = h.Text[1:]
 		}
 	})
 
-	c.Visit("https://www.iitkgp.ac.in/department/AE")
+	c.Visit(DEPARTMENT_URL + "AE")
 
 	b, err := json.MarshalIndent(deps, "", "	")
 	if err != nil {

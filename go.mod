@@ -1,10 +1,10 @@
-module github.com/shikharish/erp-scripts
+module github.com/shikharish/kgp-scripts
 
 go 1.22.0
 
 require (
 	github.com/gocolly/colly v1.2.0
-	github.com/metakgp/iitkgp-erp-login-go v1.0.1
+	github.com/metakgp/iitkgp-erp-login-go v1.0.2
 	github.com/pkg/browser v0.0.0-20240102092130-5ac0b6a4141c
 )
 
