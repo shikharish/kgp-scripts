@@ -1,3 +1,4 @@
 *.json
 .token
 .session
+cmd/main.go
