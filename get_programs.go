@@ -9,7 +9,7 @@ import (
 	"github.com/gocolly/colly"
 )
 
-func WriteProgramsToJSON() {
+func WriteProgramsToJSON(level string) {
 	programs := make(map[string]string)
 
 	c := colly.NewCollector(
@@ -30,14 +30,18 @@ func WriteProgramsToJSON() {
 		programs[code] = h.Text
 	})
 
-	c.Visit(UG_NEW_CURRICULA_URL)
+	if level == "pg" {
+		c.Visit(PG_CURRICULA_URL)
+	} else {
+		c.Visit(UG_NEW_CURRICULA_URL)
+	}
 
 	b, err := json.MarshalIndent(programs, "", "	")
 	if err != nil {
 		fmt.Println("error parsing json from programs map:", err)
 	}
 
-	err = os.WriteFile("programs.json", b, 0644)
+	err = os.WriteFile(level+"_programs.json", b, 0644)
 	if err != nil {
 		fmt.Println("error writing json file")
 	}
